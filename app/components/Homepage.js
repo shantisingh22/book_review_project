@@ -1,4 +1,3 @@
-
 import "./Homepage.css";
 import Row_Container from "./RowContainer.js";
 import { dumyData } from "./data.js"; 
@@ -11,6 +10,5 @@ const Homepage = () => {
         </div>
     );
 };
-
 export default Homepage;
 
