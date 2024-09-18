@@ -4,14 +4,26 @@ import "./Homepage.css";
 
 const Col_Container = ({ details }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [userRating, setUserRating] = useState(null); 
-  const [hoverRating, setHoverRating] = useState(0); 
+  const [userRating, setUserRating] = useState(null);
+  const [hoverRating, setHoverRating] = useState(0);
+  const [userReview, setUserReview] = useState(""); 
+  const [committedReview, setCommittedReview] = useState(""); 
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   const submitRating = (rating) => {
     setUserRating(rating);
+    closeModal();
+  };
+
+  const handleReviewChange = (e) => {
+    setUserReview(e.target.value); 
+  };
+
+  const commitReview = () => {
+    setCommittedReview(userReview);
+    setUserReview(""); 
     closeModal(); 
   };
 
@@ -25,6 +37,7 @@ const Col_Container = ({ details }) => {
         <p className="book-author">{details.author}</p>
         <p className="description">{details.description}</p>
         {userRating && <p className="user-rating">Your Rating: {userRating} Stars</p>}
+        {committedReview && <p className="user-review">Your Review: {committedReview}</p>} 
       </div>
       <div className="button-box">
         <button className="buy-button" onClick={openModal}>
@@ -61,6 +74,18 @@ const Col_Container = ({ details }) => {
                   </span>
                 ))}
               </div>
+            </div>
+            <div className="review-section">
+              <h3>Leave a Review</h3>
+              <textarea
+                value={userReview}
+                onChange={handleReviewChange}
+                placeholder="Write here"
+                className="review-input"
+              />
+              <button onClick={commitReview} className="commit-button">
+                Commit Review
+              </button>
             </div>
           </div>
         </div>

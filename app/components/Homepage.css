@@ -225,4 +225,23 @@ button[type="submit"]:hover {
     font-weight: bold;
     margin-top: 10px;
   }
+
+  .review-input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
   
+  .commit-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }  
