@@ -71,7 +71,7 @@ export const dumyData = [
     author: "Sophia Wilson",
     description: "A suspenseful thriller where strange happenings in a fog-covered town reveal dark secrets.",
     image: "7image.webp",
-    image: "7image.webp",
+    image: "imagebox.jpg",
     rating: "Rating : 4.2",
     releaseDate: "ReleaseDate : 2019-03-18",
     genre: "Gener : Thriller, Horror",
