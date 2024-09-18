@@ -1,4 +1,3 @@
-
 import '../globals.css'; 
 const Footer = () => {
     return (
@@ -17,5 +16,4 @@ const Footer = () => {
         </footer>
     );
 };
-
 export default Footer;
