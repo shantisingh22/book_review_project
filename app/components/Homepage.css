@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.divBox{
+    /* border:solid red 1px; */
+    width:1440px;
+    margin:auto;
+
+
+}
+.divBox1{
+    /* border:solid red 1px; */
+    width:1360px;
+    display:flex;
+    padding:40px;
+    gap:40px;
+    
+}
+.divBox2{
+    /* border:solid red 1px; */
+    width:1360px;
+    display:flex;
+    padding:40px;
+    gap:40px;
+    
+}
+.divBox3{
+    /* border:solid red 1px; */
+    width:1360px;
+    display:flex;
+    padding:40px;
+    gap:40px;
+}
+.colBoxdiv{
+    border:solid gray 1px;
+    width:450px;
+    height:500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 24px;
+}
+
+.image-box{
+    width: 200px;
+    margin:auto;
+    margin-top:30px;
+    border: solid gray 1px;
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 12px;
+
+}
+.book-cover {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: solid gray 1px;
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+    border-color: blue; 
+}
+
+.book-info {
+    flex-grow: 1;
+}
+
+.book-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.book-author {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.description{
+    width:100%;
+    font-size:18px;
+}
+.button-box{
+    border:solid gray 1px;
+    margin:auto;
+    width:105px;
+    height:40px;
+    margin-top: 15px;
+    border-radius: 8px;
+
+}
+
+.buy-button{
+    border:solid gray 1px;
+    height:40px;
+    width:105px;
+    color:white;
+    /* margin-top: 10px; */
+    border-radius: 8px;
+    background-color: #5637fe;
+
+}
+
+/* ////modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+
+/* Star Rating Styles */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: lightgray; /* Default color */
+    transition: color 0.3s;
+  }
+  
+  .filled {
+    color: gold; /* Star filled color */
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-rating {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
