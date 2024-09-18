@@ -21,8 +21,10 @@
     background-color: white;
   }
   .col1one1{
-    width:105px;
+    width:270px;
     height:75px;
+    display: flex;
+    justify-content: space-between;
   }
   .col1one1 img{
     width:100%;
@@ -36,18 +38,20 @@
   }
   .colBox1{
     width:70px;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 15px;
     text-align: center;
     padding:5px;
     
   }
   
   .colBox2{
-    width:100px;
-    font-size: 20px;
+    width:113px;
+    font-size: 23px;
+    font-weight: bold;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     padding:5px;
   }
 
@@ -105,4 +109,12 @@
   
   .footer-copyright {
     font-size: 12px;
+  }
+  .headiingdiv{
+    /* border: solid red 1px; */
+    width:460px;
+    height:30px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 25px;
   }

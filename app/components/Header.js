@@ -5,6 +5,7 @@ const Header =() =>{
                 <div className="rowBox">
                     <div className="col1one1">
                         <img src="pngtree-open-book-logo.png" alt="Image description" />
+                        <div className="headiingdiv">Book Review</div>
                     </div>
                     
                     <div className="col2two">
