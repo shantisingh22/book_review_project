@@ -68,7 +68,7 @@ export const dumyData = [
   {
     id: 7,
     title: "Shadows in the Mist",
-    author: "Sophia Wilson",
+    author: "Author : Sophia Wilson",
     description: "A suspenseful thriller where strange happenings in a fog-covered town reveal dark secrets.",
     image: "7image.webp",
     image: "imagebox.jpg",
